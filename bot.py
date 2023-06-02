@@ -11,7 +11,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    markup = type.ReplyKeyboardMarkup(resize_keyboard = True)
+    markup = types.ReplyKeyboardMarkup(resize_keyboard = True)
     item1 = types.KeyboardButton('first')
     item2 = types.KeyboardButton('second')
     item3 = types.KeyboardButton('third')
